@@ -44,3 +44,7 @@ fun takeTurns(){
 fun isPlayingAgain(nextGame: String): Boolean {
     return nextGame.equals("y", ignoreCase = true)
 }
+
+fun getCurrentPlayer(): String {
+    return currentPlayer
+}

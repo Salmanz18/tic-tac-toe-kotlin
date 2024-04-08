@@ -37,7 +37,7 @@ class Board(private val n: Int){
             printBoard()
             isGameOver = isWinningMove(x, y, move) || isDraw()
             if(isGameOver && !isDraw()){
-                println("You won")
+                println("${getCurrentPlayer()} won")
             } else if(isDraw()) {
                 println("It's a Draw!")
             }
